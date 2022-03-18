@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<link rel="shortcut icon" href="#">
+<style>
+    body { 
+        background-color: rgb(150, 150, 150);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #config {
+        display: flex ;
+        flex-direction: column;
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        background-color: #001d62bd;
+        color: white;
+        border-style: solid;
+        border-color    : black;
+        height :auto;
+        border-width: 2px;
+        flex-wrap: wrap;
+            
+    
+        border-radius: 25px;
+
+      
+    }
+    #glcanvas {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: white;
+    }
+    .wid{
+        width : 300px;
+    }
+    .f{
+        float:left;
+        border: 1px solid orange ;
+    }
+    .fl{
+        text-align: left;
+        display:inline-block;
+        border:1px solid orange;
+    }
+    .fl2 {
+        display:inline;
+    }
+</style>
+<body>
+    <script src="utils.js" type="text/javascript"></script>
+    <script src="gl.js" type="module"></script>
+    <script src ="toji-gl-matrix-21b745f/dist/gl-matrix-min.js"> </script>
+   
+    <canvas id="glcanvas"></canvas>
+    <div id="config">
+        <table>
+            <tr>
+               <!-- <td>Rotatex</td>
+                <td><input class="wid"  id="rotatex" type="range" min="0" max="360" value="0" ></td>  -->
+                   <td>Rotatey</td>
+              
+             <td><input class="wid"  id="rotatey" type="range" min="0" max="360" value="0" ></td> 
+              
+            </tr>
+            <tr>
+                <td>Zoom</td>
+                <td><input class="wid"  id="zoom" type="range" min="0" max="100" value="10" ></td>
+               <!-- <td>no</td>   
+                <td><input class="wid"  id="no" type="range" min="0" max="300" value="10" ></td>
+                <td>u1</td>   
+                <td><input class="wid"  id="go1" type="range" min="-10" max="10" value="1" ></td>
+                <td>u2</td>   
+                <td><input class="wid"  id="go2" type="range" min="-10" max="10" value="1" ></td>
+                <td>u3</td>   
+                <td><input class="wid"  id="go3" type="range" min="-10" max="10" value="1" ></td>
+                <td>u4</td>   
+                <td><input class="wid"  id="go4" type="range" min="-10" max="10" value="1" ></td>
+                <td>u5</td>   
+                <td><input class="wid"  id="go5" type="range" min="-10" max="10" value="1" >  </td>  -->
+            </tr>
+            <tr>
+                <td>Projection</td>
+                <td>
+                <select id="tview">
+                    
+                        <option value="perspec">Perspective</option>
+                        <option value="ortho">orthographic</option>
+                
+                </select> 
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>Layers</td>
+                <td>  <input type='file' class ="f" onchange="window.handleFile(event)"> </td>
+
+                
+             
+             
+            </tr>
+           
+
+        </table>
+        <div class = "fl">
+            <!--
+            <div class="fl2">z2 </div>
+            <p id="z2o" class="fl2"></p> 
+            <div class="fl2">zoom </div>
+            <p id="zoomo" class="fl2"></p> 
+            <div class="fl2">angx </div>
+            <p id="x" class="fl2"></p> 
+            <div class="fl2">angy </div>
+            <p id="y" class="fl2"></p> 
+
+            <div class="fl2">u1 </div>
+            <p id="u1" class="fl2"></p> 
+
+            <div class="fl2">u2 </div>
+            <p id="u2" class="fl2"></p> 
+            <div class="fl2">u3 </div>
+            <p id="u3" class="fl4"></p> 
+            <div class="fl2">u4 </div>
+            <p id="u4" class="fl2"></p> 
+            <div class="fl2">u5 </div>
+            <p id="u5" class="fl2"></p>   
+         -->
+            
+            
+
+        </div>
+       
+
+    </div>
+</body>
+</html>
