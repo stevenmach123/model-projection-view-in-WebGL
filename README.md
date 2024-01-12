@@ -2,9 +2,11 @@
 
 ## Link
   - https://stevenmach123.github.io/model-projection-view-in-WebGL/
-## How the program run
-  -  First, you need a city.json upload, then perspective of the city  gonna appear. This are free to zoom in/out and rotate 2d surface. 
-  -  Then, can change projection to be orthogonal, which re-appear on different view and angle  based on  current change of zoom and rotate slide. 
+## How the program run  
+  1. Download or clone repository
+  2. Choose file: **city.json**
+  3. Once file uploaded, perspective of the city  gonna appear. This are free to zoom in/out and rotate 2d surface. 
+  4. Then, can change projection to be orthogonal, which re-appear on different view and angle  based on  current change of zoom and rotate slide. 
 
 ## Main functionality 
   ### Layers  and BuildingLayers with vertex shaders 
